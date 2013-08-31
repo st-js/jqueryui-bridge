@@ -14,23 +14,13 @@ import org.stjs.javascript.jquery.JQueryAndPlugins;
 abstract public class UIMousePlugin<FullJQuery extends JQueryAndPlugins<?>> extends UIWidget<FullJQuery> {
 	protected FullJQuery helper;
 
-	protected boolean _mouseCapture(Event ev) {
-		throw new UnsupportedOperationException();
-	}
+	protected native boolean _mouseCapture(Event ev);
 
-	protected void _mouseInit() {
-		throw new UnsupportedOperationException();
-	}
+	protected native void _mouseInit();
 
-	protected void _mouseDrag(Event ev) {
-		throw new UnsupportedOperationException();
-	}
+	protected native void _mouseDrag(Event ev);
 
-	protected void _mouseStart(Event ev) {
-		throw new UnsupportedOperationException();
-	}
+	protected native void _mouseStart(Event ev);
 
-	protected void _mouseStop(Event ev) {
-		throw new UnsupportedOperationException();
-	}
+	protected native void _mouseStop(Event ev);
 }

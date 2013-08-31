@@ -5,16 +5,10 @@ import org.stjs.javascript.jquery.JQueryAndPlugins;
 
 @SyntheticType
 abstract public class UIWidget<FullJQuery extends JQueryAndPlugins<?>> {
-	protected void _trigger(String event) {
-		throw new UnsupportedOperationException();
-	}
+	protected native void _trigger(String event);
 
-	protected void _init() {
-		throw new UnsupportedOperationException();
-	}
+	protected native void _init();
 
 	@Override
-	public FullJQuery clone() {
-		throw new UnsupportedOperationException();
-	}
+	public native FullJQuery clone();
 }
