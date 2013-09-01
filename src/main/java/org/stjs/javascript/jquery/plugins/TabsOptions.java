@@ -29,8 +29,6 @@ public class TabsOptions<FullJQuery extends JQueryCore<?>> {
 
 	public boolean collapsible = false;
 
-	public Object cookie = null;
-
 	public boolean deselectable = false;
 
 	public String event = "click";

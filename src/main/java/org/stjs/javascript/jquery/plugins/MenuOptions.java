@@ -19,24 +19,16 @@ import org.stjs.javascript.annotation.SyntheticType;
 import org.stjs.javascript.jquery.JQueryCore;
 
 @SyntheticType
-public class AccordionOptions<FullJQuery extends JQueryCore<?>> {
+public class MenuOptions<FullJQuery extends JQueryCore<?>> {
 	public boolean disabled = false;
+	public Object icons;
+	public String menus;
+	public PositionOptions position;
+	public String role;
 
-	public Object active;
-	public String animated = "slide";
+	public UIEventHandler<MenuUI<FullJQuery>> blur;
+	public UIEventHandler<MenuUI<FullJQuery>> create;
 
-	public boolean collapsible = false;
-
-	public String event = "click";
-
-	public boolean fixedHeight = false;
-
-	public String header = "> li > :first-child,> :not(li):even";
-
-	public Object icons;// = { "header": "ui-icon-triangle-1-e", "headerSelected": "ui-icon-triangle-1-s" }
-
-	public UIEventHandler<AccordionUI<FullJQuery>> create;
-	public UIEventHandler<AccordionUI<FullJQuery>> activate;
-
-	public UIEventHandler<AccordionUI<FullJQuery>> beforeactivate;
+	public UIEventHandler<MenuUI<FullJQuery>> focus;
+	public UIEventHandler<MenuUI<FullJQuery>> select;
 }

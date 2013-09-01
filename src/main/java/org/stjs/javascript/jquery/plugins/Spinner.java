@@ -19,24 +19,16 @@ import org.stjs.javascript.annotation.SyntheticType;
 import org.stjs.javascript.jquery.JQueryCore;
 
 @SyntheticType
-public class AccordionOptions<FullJQuery extends JQueryCore<?>> {
-	public boolean disabled = false;
+public interface Spinner<FullJQuery extends JQueryCore<?>> {
+	public FullJQuery spinner();
 
-	public Object active;
-	public String animated = "slide";
+	public FullJQuery spinner(SpinnerOptions<FullJQuery> options);
 
-	public boolean collapsible = false;
+	public FullJQuery spinner(String methodName);
 
-	public String event = "click";
+	public Object spinner(String option, String optionName);
 
-	public boolean fixedHeight = false;
+	public FullJQuery spinner(String option, String optionName, Object value);
 
-	public String header = "> li > :first-child,> :not(li):even";
-
-	public Object icons;// = { "header": "ui-icon-triangle-1-e", "headerSelected": "ui-icon-triangle-1-s" }
-
-	public UIEventHandler<AccordionUI<FullJQuery>> create;
-	public UIEventHandler<AccordionUI<FullJQuery>> activate;
-
-	public UIEventHandler<AccordionUI<FullJQuery>> beforeactivate;
+	public FullJQuery spinner(String option, SpinnerOptions<FullJQuery> options);
 }

@@ -28,21 +28,15 @@ abstract public class GlobalJQueryUI extends GlobalJQuery {
 	/**
 	 * jquery constructors
 	 */
-	public static <FullJQuery extends JQueryAndPlugins<?>> FullJQuery $(String path) {
-		return null;
-	}
+	public native static <FullJQuery extends JQueryAndPlugins<?>> FullJQuery $(String path);
 
-	public static <FullJQuery extends JQueryAndPlugins<?>> FullJQuery $(String path, Object context) {
-		return null;
-	}
+	public native static <FullJQuery extends JQueryAndPlugins<?>> FullJQuery $(String path, Object context);
 
-	public static <FullJQuery extends JQueryAndPlugins<?>> FullJQuery $(Object path) {
-		return null;
-	}
+	public native static <FullJQuery extends JQueryAndPlugins<?>> FullJQuery $(Object path);
 
-	abstract public <FullJQuery extends JQueryAndPlugins<?>> void each(JQueryAndPlugins<FullJQuery> collection,
+	public native <FullJQuery extends JQueryAndPlugins<?>> void each(JQueryAndPlugins<FullJQuery> collection,
 			Callback2<Integer, Element> elementIterationFunction);
 
-	abstract public void widget(String name, Object plugin);
+	public native void widget(String name, Object plugin);
 
 }

@@ -19,24 +19,16 @@ import org.stjs.javascript.annotation.SyntheticType;
 import org.stjs.javascript.jquery.JQueryCore;
 
 @SyntheticType
-public class AccordionOptions<FullJQuery extends JQueryCore<?>> {
-	public boolean disabled = false;
+public interface Tooltip<FullJQuery extends JQueryCore<?>> {
+	public FullJQuery tooltip();
 
-	public Object active;
-	public String animated = "slide";
+	public FullJQuery tooltip(TooltipOptions<FullJQuery> options);
 
-	public boolean collapsible = false;
+	public FullJQuery tooltip(String methodName);
 
-	public String event = "click";
+	public Object tooltip(String option, String optionName);
 
-	public boolean fixedHeight = false;
+	public FullJQuery tooltip(String option, String optionName, Object value);
 
-	public String header = "> li > :first-child,> :not(li):even";
-
-	public Object icons;// = { "header": "ui-icon-triangle-1-e", "headerSelected": "ui-icon-triangle-1-s" }
-
-	public UIEventHandler<AccordionUI<FullJQuery>> create;
-	public UIEventHandler<AccordionUI<FullJQuery>> activate;
-
-	public UIEventHandler<AccordionUI<FullJQuery>> beforeactivate;
+	public FullJQuery tooltip(String option, TooltipOptions<FullJQuery> options);
 }
