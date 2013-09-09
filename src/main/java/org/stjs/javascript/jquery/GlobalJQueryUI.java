@@ -17,13 +17,11 @@ package org.stjs.javascript.jquery;
 
 import org.stjs.javascript.annotation.GlobalScope;
 import org.stjs.javascript.annotation.SyntheticType;
-import org.stjs.javascript.dom.Element;
-import org.stjs.javascript.functions.Callback2;
 
 @GlobalScope
 @SyntheticType
-abstract public class GlobalJQueryUI extends GlobalJQuery {
-	public static GlobalJQueryUI $;
+public final class GlobalJQueryUI {
+	public static JQueryUINamespace $;
 
 	/**
 	 * jquery constructors
@@ -33,10 +31,5 @@ abstract public class GlobalJQueryUI extends GlobalJQuery {
 	public native static <FullJQuery extends JQueryAndPlugins<?>> FullJQuery $(String path, Object context);
 
 	public native static <FullJQuery extends JQueryAndPlugins<?>> FullJQuery $(Object path);
-
-	public native <FullJQuery extends JQueryAndPlugins<?>> void each(JQueryAndPlugins<FullJQuery> collection,
-			Callback2<Integer, Element> elementIterationFunction);
-
-	public native void widget(String name, Object plugin);
 
 }

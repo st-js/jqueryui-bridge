@@ -24,19 +24,21 @@ import org.stjs.javascript.jquery.plugins.Dialog;
 import org.stjs.javascript.jquery.plugins.Draggable;
 import org.stjs.javascript.jquery.plugins.Droppable;
 import org.stjs.javascript.jquery.plugins.JQueryUI;
+import org.stjs.javascript.jquery.plugins.Menu;
+import org.stjs.javascript.jquery.plugins.Position;
 import org.stjs.javascript.jquery.plugins.Progressbar;
 import org.stjs.javascript.jquery.plugins.Resizable;
 import org.stjs.javascript.jquery.plugins.Selectable;
 import org.stjs.javascript.jquery.plugins.Slider;
 import org.stjs.javascript.jquery.plugins.Sortable;
+import org.stjs.javascript.jquery.plugins.Spinner;
 import org.stjs.javascript.jquery.plugins.Tabs;
+import org.stjs.javascript.jquery.plugins.Tooltip;
 
 /**
  * In the JQuery model, the plugins add methods to the jquery object. FullJQueryhis interface inherits from all the
  * needed plugins.
- * 
  * @author <a href='mailto:ax.craciun@gmail.com'>Alexandru Craciun</a>
- * 
  */
 @SyntheticType
 public interface JQueryAndPlugins<FullJQuery extends JQueryAndPlugins<?>> extends JQueryCore<FullJQuery>, //
@@ -53,7 +55,11 @@ public interface JQueryAndPlugins<FullJQuery extends JQueryAndPlugins<?>> extend
 		Selectable<FullJQuery>,//
 		Slider<FullJQuery>,//
 		Sortable<FullJQuery>,//
-		Tabs<FullJQuery>//
+		Tabs<FullJQuery>,//
+		Menu<FullJQuery>,//
+		Position<FullJQuery>,//
+		Spinner<FullJQuery>,//
+		Tooltip<FullJQuery>//
 {
 
 }
