@@ -23,7 +23,7 @@ import org.stjs.javascript.jquery.plugins.Datepicker;
 import org.stjs.javascript.jquery.plugins.Dialog;
 import org.stjs.javascript.jquery.plugins.Draggable;
 import org.stjs.javascript.jquery.plugins.Droppable;
-import org.stjs.javascript.jquery.plugins.JQueryUI;
+import org.stjs.javascript.jquery.plugins.JQueryUICore;
 import org.stjs.javascript.jquery.plugins.Menu;
 import org.stjs.javascript.jquery.plugins.Position;
 import org.stjs.javascript.jquery.plugins.Progressbar;
@@ -42,7 +42,7 @@ import org.stjs.javascript.jquery.plugins.Tooltip;
  */
 @SyntheticType
 public interface JQueryAndPlugins<FullJQuery extends JQueryAndPlugins<?>> extends JQueryCore<FullJQuery>, //
-		JQueryUI<FullJQuery>,//
+		JQueryUICore<FullJQuery>,//
 		Accordion<FullJQuery>,//
 		AutoComplete<FullJQuery>,//
 		Button<FullJQuery>,//

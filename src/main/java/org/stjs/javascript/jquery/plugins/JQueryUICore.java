@@ -4,7 +4,7 @@ import org.stjs.javascript.annotation.SyntheticType;
 import org.stjs.javascript.jquery.JQueryCore;
 
 @SyntheticType
-public interface JQueryUI<FullJQuery extends JQueryCore<?>> {
+public interface JQueryUICore<FullJQuery extends JQueryCore<?>> {
 	<UI> FullJQuery bind(String path, UIEventHandler<UI> uiEventHandler);
 
 	void enableSelection();

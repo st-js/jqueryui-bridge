@@ -23,6 +23,6 @@ import org.stjs.javascript.annotation.SyntheticType;
  * @author acraciun
  */
 @SyntheticType
-public interface JQueryUI extends JQueryAndPlugins<JQueryUI> {//
+public interface JQuery extends JQueryAndPlugins<JQuery> {//
 
 }
