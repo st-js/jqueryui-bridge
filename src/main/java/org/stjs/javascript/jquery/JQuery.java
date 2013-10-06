@@ -16,13 +16,13 @@
 package org.stjs.javascript.jquery;
 
 import org.stjs.javascript.annotation.SyntheticType;
+import org.stjs.javascript.jquery.plugins.JQueryUICore;
 
 /**
  * you should use this class if you don't create your own version of JQuery interface in your project
- * 
  * @author acraciun
  */
 @SyntheticType
-public interface JQueryUI extends JQueryAndPlugins<JQueryUI> {//
+public interface JQuery extends JQueryAndPlugins<JQuery>, JQueryUICore<JQuery> {//
 
 }
